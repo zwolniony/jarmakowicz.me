@@ -1,0 +1,168 @@
+/* Landing page. Loaded after style.css; only applies under body.home */
+.home{font-size:clamp(18px,.45vw + 15px,20px);line-height:1.7}
+.home p+p{margin-top:.9em}
+
+/* sticky header */
+.home .top{position:sticky;top:0;z-index:20;background:var(--cream);transition:box-shadow .3s}
+.home .top.scrolled{box-shadow:0 1px 0 var(--ink)}
+
+/* shared type */
+.home .kicker{margin-bottom:18px}
+.h-h2{font-family:var(--display);font-weight:700;font-size:clamp(32px,4vw,56px);line-height:1;text-transform:uppercase;letter-spacing:-.005em;max-width:16ch}
+.h-h2 a{text-decoration:none;color:var(--crimson)}
+.h-h2 a:hover{text-decoration:underline}
+.h-body{max-width:58ch;margin-top:22px}
+.h-head{margin-bottom:clamp(40px,6vw,72px)}
+.h-sec{padding:clamp(88px,12vw,160px) 0 0}
+.h-split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,112px);align-items:center}
+@media (max-width:860px){.h-split{grid-template-columns:1fr}}
+
+/* hero */
+.h-hero{position:relative;min-height:calc(100svh - 120px);display:flex;align-items:center;overflow:hidden;padding:48px 0 96px}
+.h-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:clamp(32px,5vw,80px);align-items:center;position:relative;z-index:2}
+.h-title{font-family:var(--display);font-weight:700;font-size:clamp(40px,5.1vw,84px);line-height:.95;letter-spacing:-.015em;text-transform:uppercase;max-width:17ch;text-wrap:balance}
+.h-title span{color:var(--crimson)}
+.h-lede{font-size:clamp(19px,.7vw + 14px,23px);line-height:1.6;max-width:42ch;margin-top:32px}
+.h-art img{width:100%;max-height:min(70vh,620px);object-fit:contain}
+.affil{max-width:520px}
+@media (max-width:860px){
+  .h-hero{min-height:auto;padding-top:24px}
+  .h-grid{grid-template-columns:1fr}
+  .h-art{order:-1;max-width:300px}
+  .h-art img{max-height:340px}
+}
+.h-cue{position:absolute;left:50%;bottom:28px;translate:-50% 0;z-index:3;display:grid;place-items:center;width:44px;height:44px;border:2px dotted var(--ink);border-radius:50%;}
+.h-cue .pc{font-size:14px}
+@keyframes bob{50%{transform:translateY(8px)}}
+
+/* angles */
+.angles{list-style:none;display:grid;gap:clamp(64px,9vw,120px)}
+.angle{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,96px);align-items:center}
+.angle:nth-child(even){grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
+.angle:nth-child(even) figure{order:2}
+.angle figure img{width:100%;max-height:420px;object-fit:contain}
+.angle .num{display:block;font-family:var(--display);font-weight:700;font-size:clamp(56px,7vw,96px);line-height:.8;color:transparent;-webkit-text-stroke:2px var(--ink);margin-bottom:18px}
+.angle h3{font-size:clamp(26px,2.6vw,36px);line-height:1.05;margin-bottom:18px;max-width:18ch}
+.angle p{max-width:44ch}
+.angle .eg{font-family:var(--voice);font-style:italic;font-size:1.12em;line-height:1.5;padding-left:20px;border-left:3px dotted var(--crimson)}
+.angle:hover .num{color:var(--crimson);-webkit-text-stroke-color:var(--crimson);transition:color .3s}
+@media (max-width:860px){
+  .angle,.angle:nth-child(even){grid-template-columns:1fr}
+  .angle:nth-child(even) figure{order:0}
+  .angle figure img{max-height:280px}
+}
+.h-note{max-width:62ch;margin-top:clamp(64px,8vw,104px);padding-top:28px;border-top:2px solid var(--ink);font-size:.95em}
+
+/* project */
+.h-facts{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.h-facts div{padding:22px 0;border-top:1.5px dotted rgba(20,20,20,.55)}
+.h-facts dt{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px;color:var(--teal-deep)}
+@media (max-width:560px){.h-facts{grid-template-columns:1fr}}
+
+/* events */
+.events{list-style:none;border-top:2px solid var(--ink)}
+.events li{display:grid;grid-template-columns:140px minmax(0,1.1fr) minmax(0,1fr);gap:24px;padding:28px 0;border-bottom:1.5px dotted rgba(20,20,20,.55);transition:padding .3s,background .3s}
+.events li:hover{background:rgba(232,180,160,.2)}
+.events .when{font-family:var(--display);font-weight:700;letter-spacing:.08em}
+.events .what{font-family:var(--display);font-weight:700;font-size:clamp(19px,1.6vw,24px);line-height:1.2;text-transform:uppercase}
+@media (max-width:760px){.events li{grid-template-columns:1fr;gap:4px}}
+.h-aside{margin-top:40px;max-width:60ch}
+
+.about-intro{align-items:center}
+.about-intro .portrait img{width:100%;max-width:440px;max-height:none}
+/* contact */
+.h-contact{padding:clamp(96px,12vw,160px) 0;margin-top:clamp(88px,12vw,160px);background:var(--ink);color:var(--cream)}
+.h-contact a{color:var(--cream)}
+.h-big{font-family:var(--display);font-weight:700;font-size:clamp(40px,5.6vw,84px);line-height:.95;text-transform:uppercase;max-width:12ch}
+.h-contact .button{background:var(--crimson);color:var(--cream)}
+.h-contact .button:hover{background:var(--cream);color:var(--ink)}
+.h-contact figure img{width:100%;background:var(--cream);border-radius:50%;aspect-ratio:1;object-fit:cover;max-width:420px;margin-left:auto}
+.home .foot{border-top:0}
+
+/* reveal + tilt */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none}
+}
+.for-academics{display:block;margin-top:14px;font-size:.88em;opacity:.75}
+
+/* portfolio */
+.feature{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,96px);align-items:center;padding:clamp(40px,5vw,64px) 0;border-top:2px solid var(--ink)}
+.feature.rev{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
+.feature.rev figure{order:2}
+.feature figure img{width:100%;max-height:400px;object-fit:contain}
+.feature .meta,.minis .meta{font-family:var(--display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:10px}
+.feature h3{font-size:clamp(28px,3vw,40px);line-height:1.05;margin-bottom:14px}
+.feature h3 a{text-decoration:none}.feature h3 a:hover{color:var(--crimson)}
+.feature .claim{font-family:var(--display);font-weight:700;font-size:clamp(20px,1.8vw,26px);line-height:1.25;text-transform:uppercase;letter-spacing:.01em;margin-bottom:18px;max-width:28ch}
+.feature .claim span{color:var(--crimson)}
+.feature p{max-width:52ch}
+.feature details{margin-top:16px}
+.feature summary{cursor:pointer;font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;list-style:none;display:inline-flex;align-items:center;gap:8px}
+.feature summary::-webkit-details-marker{display:none}
+.feature summary::before{content:"";width:10px;height:10px;background:var(--crimson);clip-path:polygon(0 0,100% 50%,0 100%);transition:transform .3s}
+.feature details[open] summary::before{transform:rotate(90deg)}
+.feature details p{margin-top:12px;font-size:.95em}
+@media (max-width:860px){.feature,.feature.rev{grid-template-columns:1fr}.feature.rev figure{order:0}.feature figure img{max-height:260px}}
+.minis{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;border-top:2px solid var(--ink)}
+.minis li{padding:32px 0;border-bottom:1.5px dotted rgba(20,20,20,.55)}
+.minis .pc{font-size:20px;display:block;margin-bottom:16px}
+.minis h3{font-size:20px;margin-bottom:10px}
+.minis p{font-size:.95em}
+@media (max-width:980px){.minis{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.minis{grid-template-columns:1fr}}
+
+/* calmer hero: one teal planet behind the illustration */
+.h-art{position:relative}
+.h-art::before{content:"";position:absolute;width:62%;aspect-ratio:1;border-radius:50%;background:var(--teal);opacity:.9;right:-6%;top:-4%;z-index:-1}
+.h-art::after{content:"";position:absolute;width:88%;aspect-ratio:1;border-radius:50%;border:3px dotted rgba(20,20,20,.5);right:-18%;top:-16%;z-index:-1}
+.h-grid{isolation:isolate}
+@media (max-width:860px){.h-art::after{display:none}.h-art::before{width:55%;right:0}}
+
+/* phones: smaller graphics so text leads */
+@media (max-width:640px){
+  .h-art{max-width:190px}
+  .h-art img{max-height:220px}
+  .h-art::before{width:60%}
+  .angle figure,.feature figure{max-width:200px}
+  .angle figure img,.feature figure img{max-height:170px}
+  .about-intro .portrait img{max-width:220px}
+  .h-contact figure img{max-width:180px;margin-left:0}
+  .angle{gap:20px}.feature{gap:20px}
+}
+
+/* ---- final review fixes ---- */
+/* never leave content hidden, even if home.js fails */
+.js .rv{animation:rv-show 0s 2.5s forwards}
+@keyframes rv-show{to{opacity:1;transform:none}}
+/* contact button: readable on phones, visible triangle */
+.h-contact .button{text-transform:none;letter-spacing:.02em;font-size:16px;max-width:100%;overflow-wrap:anywhere}
+.h-contact .button .pc.sig{background:var(--cream)}
+.h-contact .button:hover .pc.sig{background:var(--crimson)}
+.h-contact a:not(.button):hover{color:var(--blush)}
+/* links that look like links */
+.h-h2 a,.feature h3 a{text-decoration:underline;text-decoration-color:var(--teal);text-decoration-thickness:3px;text-underline-offset:6px}
+.h-body a,.events a,.h-note a,.h-aside a,.minis a,.h-facts a,.feature p a{text-decoration-color:var(--teal);text-decoration-thickness:2px}
+/* tap targets */
+.feature summary{padding:10px 0}
+@media (max-width:640px){
+  .home .nav{gap:10px;font-size:12px;letter-spacing:.04em}
+  .home .brand svg{width:54px}
+  .home .nav a{padding:12px 0}
+  .feature .meta,.minis .meta{font-size:13px;letter-spacing:.14em}
+}
+
+/* coursework + CV links */
+.coursework{margin-top:40px;border-top:2px solid var(--ink);padding-top:18px}
+.coursework summary{cursor:pointer;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;list-style:none;display:inline-flex;align-items:center;gap:10px;padding:10px 0}
+.coursework summary::-webkit-details-marker{display:none}
+.coursework summary::before{content:"";width:10px;height:10px;background:var(--crimson);clip-path:polygon(0 0,100% 50%,0 100%);transition:transform .3s}
+.coursework[open] summary::before{transform:rotate(90deg)}
+.coursework ul{list-style:none;margin-top:12px}
+.coursework li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px;padding:12px 0;border-top:1.5px dotted rgba(20,20,20,.55)}
+.coursework li span:last-child{color:var(--teal-deep);font-weight:600}
+.coursework p{margin-top:14px;font-size:.95em}
+@media (max-width:640px){.coursework li{grid-template-columns:1fr;gap:2px}}
+.cv-alt{display:inline-block;margin:14px 0 0 0;font-weight:600;text-decoration-color:var(--teal);text-decoration-thickness:2px}

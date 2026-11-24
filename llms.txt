@@ -1,0 +1,18 @@
+# Patryk Jarmakowicz-Westphal
+
+> PhD researcher at Rotterdam School of Management, Erasmus University (Netherlands), studying what happens when AI arrives in established work, with Dutch greenhouse horticulture as the field. Also offers consulting, talks and workshops on AI agents through his registered business, Jarmakowicz (Rotterdam), a side activity approved by RSM.
+
+## Research
+- [Research and about](https://jarmakowicz.me/): working with AI you can't see into, who explains AI outputs, promise versus practice of automation in horticulture, the human side of food production. Part of LEAP-AI, an NWO-funded consortium with TU Delft and Wageningen University (2025 to 2030), alongside sector partners.
+- [RSM profile](https://www.rsm.nl/people/patryk-jarmakowicz-westphal/)
+- [ORCID](https://orcid.org/0009-0005-6873-9500)
+- [Academic CV (PDF)](https://jarmakowicz.me/Patryk-Jarmakowicz-Westphal-CV-academic.pdf)
+- [Project and business CV (PDF)](https://jarmakowicz.me/Patryk-Jarmakowicz-Westphal-CV.pdf)
+
+## Consulting on AI agents
+- [Services](https://jarmakowicz.me/services.html): for NGOs, think tanks, research groups, consultancies, policy organisations and individual professionals in the Netherlands, Germany, Poland and wider Europe. Languages: English, Polish, Dutch, German.
+  - AI at work: 30 to 60 minute talks or half-day workshops for leadership teams, conferences and sector organisations.
+  - Orientation sprint: half a day to two days; a short written plan with the first workflows to try and the main risks.
+  - Personal research agent: two to four weeks; an AI agent for one researcher, consultant or analyst, connected to their sources.
+  - Team assistant: about three months; a shared assistant on a server the client owns (EU hosting possible), built on the open-source Hermes agent, with documentation, training and handover. The AI model can be swapped.
+- Pricing: fixed price per engagement, quoted on request. A data processing agreement (GDPR) is signed with every client. Contact details are on the services page.

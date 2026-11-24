@@ -1,0 +1,5 @@
+# Everyone, including search engines and AI assistants, is welcome to read this site.
+User-agent: *
+Allow: /
+
+Sitemap: https://jarmakowicz.me/sitemap.xml
