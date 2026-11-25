@@ -20,7 +20,6 @@
   "name": "Patryk Jarmakowicz-Westphal",
   "url": "https://jarmakowicz.me/",
   "image": "https://jarmakowicz.me/img/portrait.jpg",
-  "email": "mailto:patryk@jarmakowicz.me",
   "jobTitle": "PhD researcher",
   "affiliation": {"@type": "CollegeOrUniversity", "name": "Rotterdam School of Management, Erasmus University", "url": "https://www.rsm.nl/"},
   "knowsAbout": ["AI at work", "human-AI interaction", "explainable AI in practice", "greenhouse horticulture", "organisational technology adoption", "AI agents", "project management"],
@@ -267,7 +266,7 @@
       <div class="rv">
         <h2 id="contact-h" class="h-big">Working on something similar?</h2>
         <p class="h-body">I'm always glad to hear from researchers, growers and organisations thinking about AI at work. Write in English, Polish, Dutch or German.</p>
-        <a class="button" href="mailto:patryk@jarmakowicz.me"><span class="pc sig"></span>patryk@jarmakowicz.me</a>
+        <a class="button em" href="#contact" data-u="patryk" data-d="jarmakowicz.me"><span class="pc sig"></span><span class="em-t">patryk [at] jarmakowicz [dot] me</span></a>
       </div>
       <figure class="rv"><img src="img/04-handover.jpg" alt="" width="1600" height="1040"></figure>
     </div>
@@ -282,5 +281,6 @@
 </footer>
 
 <script src="home.js" defer></script>
+<script>document.querySelectorAll("a.em").forEach(function(a){var e=a.dataset.u+"@"+a.dataset.d;a.href="mailto:"+e+(a.dataset.s?"?subject="+a.dataset.s:"");var t=a.querySelector(".em-t");if(t)t.textContent=e;});</script>
 </body>
 </html>

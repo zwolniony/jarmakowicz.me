@@ -185,7 +185,7 @@
       <div>
         <p class="big" id="contact">Let's start with a call.</p>
         <p class="prose">Tell me a little about your work and where time gets lost, or what you'd like a talk or workshop to cover. Write in English, Polish, Dutch or German.</p>
-        <a class="button" href="mailto:patryk@jarmakowicz.me?subject=Working%20together%20on%20AI"><span class="pc sig"></span>patryk@jarmakowicz.me</a>
+        <a class="button em" href="#contact" data-u="patryk" data-d="jarmakowicz.me" data-s="Working%20together%20on%20AI"><span class="pc sig"></span><span class="em-t">patryk [at] jarmakowicz [dot] me</span></a>
       </div>
       <figure><img src="img/f2-figure-planet.jpg" alt="Poster-style drawing of a man waving from a small teal planet, a tiny robot beside him" width="1100" height="1400" style="max-width:340px;margin-left:auto"></figure>
     </div>
@@ -200,5 +200,6 @@
 </footer>
 
 <script src="motion.js" defer></script>
+<script>document.querySelectorAll("a.em").forEach(function(a){var e=a.dataset.u+"@"+a.dataset.d;a.href="mailto:"+e+(a.dataset.s?"?subject="+a.dataset.s:"");var t=a.querySelector(".em-t");if(t)t.textContent=e;});</script>
 </body>
 </html>
