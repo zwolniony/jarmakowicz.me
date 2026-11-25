@@ -3,7 +3,7 @@
 > PhD researcher at Rotterdam School of Management, Erasmus University (Netherlands), studying what happens when AI arrives in established work, with Dutch greenhouse horticulture as the field. Also offers consulting, talks and workshops on AI agents through his registered business, Jarmakowicz (Rotterdam), a side activity approved by RSM.
 
 ## Research
-- [Research and about](https://jarmakowicz.me/): working with AI you can't see into, who explains AI outputs, promise versus practice of automation in horticulture, the human side of food production. Part of LEAP-AI, an NWO-funded consortium with TU Delft and Wageningen University (2025 to 2030), alongside sector partners.
+- [Research and about](https://jarmakowicz.me/): seven research questions: when growers follow AI advice, who does the explaining, how promises of automation meet everyday work, whether AI works the same for different growers, who answers for the crop when software sets the climate, what skills growers keep practising, and what changes when the AI becomes a second black box next to the plant. Part of LEAP-AI, an NWO-funded consortium with TU Delft and Wageningen University (2025 to 2030), alongside sector partners.
 - [RSM profile](https://www.rsm.nl/people/patryk-jarmakowicz-westphal/)
 - [ORCID](https://orcid.org/0009-0005-6873-9500)
 - [Academic CV (PDF)](https://jarmakowicz.me/Patryk-Jarmakowicz-Westphal-CV-academic.pdf)
